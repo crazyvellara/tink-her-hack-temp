@@ -68,10 +68,8 @@ python app.py
 ### For Software:
 
 #### Screenshots 
-<img width="1919" height="1029" alt="image" src="https://github.com/user-attachments/assets/d593f69d-0ecc-4e1e-9c5d-6ea82f9d37f8" />
--
 
-![Screenshot1]<img width="738" height="449" alt="Screenshot 2026-02-14 074252" src="https://github.com/user-attachments/assets/ca1d798e-2487-44f7-a13c-9c2d0996499f" />
+<img width="738" height="449" alt="Screenshot 2026-02-14 074252" src="https://github.com/user-attachments/assets/ca1d798e-2487-44f7-a13c-9c2d0996499f" />
 - we use descission tree as our trained model
 
 <img width="1031" height="402" alt="Screenshot 2026-02-14 074212" src="https://github.com/user-attachments/assets/6fb2c4ba-e739-4074-a244-8c0cba12f6c6" />
