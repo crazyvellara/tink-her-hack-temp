@@ -80,29 +80,8 @@ python app.py
 - we code in vscode , having index.html,script.js, style.css and app.py, model student_dataset.pkl
 
 #### Diagrams
-+------------------+
-|      User        |
-| (Web Browser)    |
-+---------+--------+
-          |
-          v
-+------------------+
-|   Frontend       |
-| HTML | CSS | JS  |
-+---------+--------+
-          |
-          |  HTTP POST (JSON)
-          v
-+------------------+
-|   Flask Backend  |
-|   (app.py)       |
-+---------+--------+
-          |
-          v
-+------------------+
-|  ML Model (.pkl) |
-| Decision Tree    |
-+------------------+
+
+<img width="420" height="772" alt="Screenshot 2026-02-14 064852" src="https://github.com/user-attachments/assets/1ab6c465-3e99-4c7b-a460-aed6ec369350" />
 
 
 **System Architecture:**
