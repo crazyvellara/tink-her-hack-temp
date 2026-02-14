@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Stress Predictor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Smart Stress Level Predictor</h1>
+    <p class="subtitle">Enter your details to analyze stress and get recommendations</p>
+
+    <div class="inputs">
+
+        <!-- Age (NOT used by model, used for recommendation logic) -->
+        <input type="number" id="age" placeholder="Age" min="1">
+
+        <!-- Model Features -->
+        <input type="number" id="study" placeholder="Study Hours Per Day" step="0.1">
+        <input type="number" id="extra" placeholder="Extracurricular Hours Per Day" step="0.1">
+        <input type="number" id="sleep" placeholder="Sleep Hours Per Day" step="0.1">
+        <input type="number" id="social" placeholder="Social Hours Per Day" step="0.1">
+        <input type="number" id="activity" placeholder="Physical Activity Hours Per Day" step="0.1">
+        <input type="number" id="gpa" placeholder="GPA" step="0.1">
+
+    </div>
+
+    <button onclick="predictStress()">Analyze Stress</button>
+
+    <!-- Animated Stress Meter -->
+    <div class="meter">
+        <div id="bar"></div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results">
+        <h2 id="result"></h2>
+        <p id="recommendation"></p>
+    </div>
+
+</div>
+
+<!-- Link JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
