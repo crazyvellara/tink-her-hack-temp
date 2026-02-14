@@ -2,46 +2,41 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+## PROJECT: STRESS AND SLEEP HOURS PREDICTOR 
 
 ## Basic Details
 
-### Team Name: [Name]
+## Team Name: SYNTAX SQUAD
 
-### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+## Team Members
+- Member 1: JESNA C J - JYOTHI ENGINEERING COLLEGE THRISSUR
+- Member 2: ANN MARIYA THOMAS - JYOTHI ENGINEERING COLLEGE THRISSUR
 
-### Hosted Project Link
+## Hosted Project Link
 [mention your project hosted link here]
 
-### Project Description
-[2-3 lines about what your project does]
+## Project Description
+    A machine learning web application that predicts a student’s stress level using behavioral and academic inputs such as study hours, sleep, and GPA.The system combines a Decision Tree model with age-based recommendation logic to provide personalized stress management suggestions through an interactive web interface.
 
-### The Problem statement
-[What problem are you solving?]
 
-### The Solution
-[How are you solving it?]
+## The Problem statement
+    Students often experience varying levels of stress due to academic workload, lifestyle imbalance, and limited rest.Identifying stress levels early is challenging without proper analysis of behavioral and academic factors.There is a need for a simple system that can predict stress levels using measurable daily activities.Additionally, the system should provide age-appropriate recommendations to help students manage and reduce stress effectively.
 
----
+
+## The Solution
+    This project solves the problem by using a machine learning model to analyze key lifestyle and academic factors such as study hours, sleep, physical activity, and GPA to predict a student’s stress level.It then combines the predicted stress level with the user’s age to generate personalized, age-appropriate recommendations for better stress management.The web-based interface makes the system easily accessible and user-friendly for students.By providing early stress identification and actionable guidance, the system helps promote healthier routines and balanced lifestyles.
+
 
 ## Technical Details
 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: PYTHON,HTML,JAVA SCRIPT,CSS.
+- Frameworks used: FLASH , SCIKIT-LEARN
+- Libraries used: NUMPY,PANDAS,JOBLIB,SCIKIT-LEARN,FLASH
+- Tools used: GOOGLE COLAB,VS CODE,GITHUB,WEB BROWSER
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
-
----
 
 ## Features
 
@@ -58,30 +53,19 @@ List the key features of your project:
 ### For Software:
 
 #### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
+1.pip install flask joblib numpy 
 
 #### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
+python app.py
 
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
 ### For Software:
 
-#### Screenshots (Add at least 3)
+#### Screenshots 
+<img width="1919" height="1029" alt="image" src="https://github.com/user-attachments/assets/d593f69d-0ecc-4e1e-9c5d-6ea82f9d37f8" />
+-
 
 ![Screenshot1](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
@@ -93,11 +77,67 @@ List the key features of your project:
 *Add caption explaining what this shows*
 
 #### Diagrams
++------------------+
+|      User        |
+| (Web Browser)    |
++---------+--------+
+          |
+          v
++------------------+
+|   Frontend       |
+| HTML | CSS | JS  |
++---------+--------+
+          |
+          |  HTTP POST (JSON)
+          v
++------------------+
+|   Flask Backend  |
+|   (app.py)       |
++---------+--------+
+          |
+          v
++------------------+
+|  ML Model (.pkl) |
+| Decision Tree    |
++------------------+
+
 
 **System Architecture:**
 
 ![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+The system consists of three main components:
+Frontend (Client Side)
+Built using HTML, CSS, and JavaScript. It collects user inputs such as age, study hours, sleep hours, GPA, etc., and displays the predicted stress level along with personalized recommendations.
+Backend (Server Side)
+Developed using Flask (Python). It handles incoming requests from the frontend, processes input data, loads the trained machine learning model, and returns prediction results in JSON format.
+Machine Learning Model
+A Decision Tree Classifier trained using Scikit-learn. The trained model is saved as a .pkl file and loaded into the Flask backend for real-time predictions.
+
+The system follows this sequence:
+The user enters input values on the web page.
+JavaScript collects the data and sends it to the Flask backend using a POST request.
+Flask receives the data and extracts the relevant features.
+The backend passes the features to the trained Decision Tree model.
+The model predicts the stress level (Low, Moderate, High).
+The backend applies additional rule-based logic using age to generate personalized recommendations.
+Flask sends the prediction and recommendation back to the frontend as a JSON response.
+JavaScript updates the webpage dynamically to display:
+   Result label
+   Recommendation
+   Animated stress meter
+
+Tech Stack Interaction
+We use decission tree as our model and train that with 73% acuraccy
+downloaded that modelin pkl format
+HTML structures the user interface.
+CSS styles the webpage for a modern and responsive design.
+JavaScript handles user interaction and communicates with the backend using Fetch API.
+Flask acts as the bridge between frontend and machine learning model.
+Scikit-learn provides the trained Decision Tree model for stress prediction.
+NumPy formats input data into arrays compatible with the model.
+Joblib loads the saved .pkl model file into memory.
+Together, these technologies create a full-stack machine learning web application that integrates prediction logic with dynamic user interaction.
+
 
 **Application Workflow:**
 
@@ -106,28 +146,7 @@ List the key features of your project:
 
 ---
 
-### For Hardware:
 
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-#### Build Photos
-
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ---
 
@@ -301,62 +320,29 @@ python script.py -c config.json --verbose input.txt
 
 #### Demo Output
 
-**Example 1: Basic Processing**
-
 **Input:**
 ```
-This is a sample input file
-with multiple lines of text
-for demonstration purposes
+ age= 19
+ study hours= 8.1
+ extracrricular activities= 0.6
+ sleep hours= 6.5
+ social hours = 2.2
+ physical hours = 6.6
+ gpa(out of 4)= 3.51
 ```
 
 **Command:**
-```bash
-python script.py sample.txt
+``` to run the code in vscode :- python app.py
 ```
 
 **Output:**
 ```
-Processing: sample.txt
-Lines processed: 3
-Characters counted: 86
-Status: Success
-Output saved to: output.txt
+ we will get answer:
+   stress level = High
+   Recomended sleep hours:9
+   <img width="1915" height="1015" alt="image" src="https://github.com/user-attachments/assets/5d4b1076-5c62-4a86-815a-02e160ff01ac" />
 ```
 
-**Example 2: Advanced Usage**
-
-**Input:**
-```json
-{
-  "name": "test",
-  "value": 123
-}
-```
-
-**Command:**
-```bash
-python script.py -v --format json data.json
-```
-
-**Output:**
-```
-[VERBOSE] Loading configuration...
-[VERBOSE] Parsing JSON input...
-[VERBOSE] Processing data...
-{
-  "status": "success",
-  "processed": true,
-  "result": {
-    "name": "test",
-    "value": 123,
-    "timestamp": "2024-02-07T10:30:00"
-  }
-}
-[VERBOSE] Operation completed in 0.23s
-```
-
----
 
 ## Project Demo
 
