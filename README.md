@@ -13,7 +13,7 @@
 - Member 2: ANN MARIYA THOMAS - JYOTHI ENGINEERING COLLEGE THRISSUR
 
 ## Hosted Project Link
-[mention your project hosted link here]
+https://tink-her-hack-temp-u7io.onrender.com/
 
 ## Project Description
     A machine learning web application that predicts a student’s stress level using behavioral and academic inputs such as study hours, sleep, and GPA.The system combines a Decision Tree model with age-based recommendation logic to provide personalized stress management suggestions through an interactive web interface.
