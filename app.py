@@ -8,16 +8,14 @@ model = joblib.load("Student_dataset.pkl")
 
 # Recommendation logic
 def generate_recommendation(age, stress_level):
-
-
     if stress_level == "High":
-        if age <=1 & age >=5:
+        if age >= 1 and age <= 5:
             sleep = 12
             return sleep
-        elif age <=6 & age>=12:
+        elif age >= 6 and age <= 12:
             sleep = 11
             return sleep
-        elif age <=13 & age >=18:
+        elif age >= 13 and age <= 18:
             sleep = 10
             return sleep
         else:
@@ -25,13 +23,13 @@ def generate_recommendation(age, stress_level):
             return sleep
 
     elif stress_level == "Moderate":
-        if age <=1 & age >=5:
+        if age >= 1 and age <= 5:
             sleep = 11
             return sleep
-        elif age <=6 & age>=12:
+        elif age >= 6 and age <= 12:
             sleep = 10
             return sleep
-        elif age <=13 & age >=18:
+        elif age >= 13 and age <= 18:
             sleep = 9
             return sleep
         else:
@@ -39,13 +37,13 @@ def generate_recommendation(age, stress_level):
             return sleep
 
     else:  # Low
-        if age <=1 & age >=5:
+        if age >= 1 and age <= 5:
             sleep = 10
             return sleep
-        elif age <=6 & age>=12:
+        elif age >= 6 and age <= 12:
             sleep = 9
             return sleep
-        elif age <=13 & age >=18:
+        elif age >= 13 and age <= 18:
             sleep = 8
             return sleep
         else:
@@ -83,4 +81,4 @@ def predict():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)
